@@ -1,78 +1,191 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/mdForDesktop.css" />
+    <link rel="stylesheet" href="./css/mdForSmall.css" />
+
     <title>Vinosha Srikugananthan - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome to Vinosha Srikugananthan's Portfolio</h1>
-        <p>Hi, I'm Vinosha Srikugananthan, a student studying Networking and IT Security at Ontario Tech University.</p>
+    <!-- Header -->
+    <header id="header">
+        <div class="header container">
+            <div class="navBar">
+                <div class="logo">
+                    <h1><span>V</span><span>S</span>rikugananthan</h1>
+                </div>
+                <nav class="navList">
+                    <div class="navLines">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#home" class="navLink scrollto active"> <span>Home</span></a></li>
+                        <li><a href="#about" class="navLink scrollto"><span>About Me</span></a></li>
+                        <li><a href="#projects" class="navLink scrollto"><span>Projects</span></a></li>
+                        <li><a href="#contact" class="navLink scrollto"><span>Contact</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+    <!-- End Header -->
 
     <!-- Home Section -->
     <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to my personal portfolio where I share my academic journey, extracurricular activities, and projects I've worked on.</p>
+        <div class="home container">
+            <div>
+                <h1>Hello, <span></span></h1>
+                <h1>My Name is <span></span></h1>
+                <h1>Vinosha Srikugananthan <span></span></h1>
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+        </div>
     </section>
+    <!-- End Home Section -->
 
-    <!-- About Me Section -->
+    <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <img src="vinosha.jpg" alt="Vinosha Srikugananthan" width="200">
-        <p>Hello! I'm Vinosha, a third-year university student majoring in Networking and IT Security with a minor in Business Management. I'm passionate about fostering innovation and making a positive impact in the tech world. I enjoy hobbies like baking and cooking, which help me relax after my busy days.</p>
-        
-        <!-- Introductory Video -->
-        <video controls poster="poster.jpg" width="400">
-            <source src="intro.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div class="about container">
+            <div class="colLeft">
+                <div class="aboutImg">
+                    <img src="vinosha.jpg" alt="Vinosha Srikugananthan" />
+                </div>
+            </div>
+            <div class="colRight">
+                <h1 class="sectionTitle">About <span>Me</span></h1>
+                <article>
+                    <h2>Networking and IT Security Student</h2>
+                    <p>I am a third-year university student specializing in Networking and IT Security, with a minor in Business Management. I'm passionate about fostering innovation and making a positive impact in the tech community. I enjoy hobbies like baking and cooking, which help me relax and unleash my creativity.</p>
+                </article>
+                <a href="./video.html" class="btn" target="_blank">Watch Introductory Video</a>
+            </div>
+        </div>
     </section>
+    <!-- End About Section -->
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li><strong>Mobalytics Externship:</strong> Contributed to the development of advanced analytics solutions.</li>
-            <li><strong>AI Connectivity Platform:</strong> Developed AI-driven platform enhancing entrepreneurship in Canada.</li>
-        </ul>
+        <div class="projects container">
+            <div class="projectsHeader">
+                <h1 class="sectionTitle">Recent <span>Projects</span></h1>
+            </div>
+            <div class="allProjects">
+                <div class="projectItem">
+                    <div class="projectInfo">
+                        <h1>Analyst Challenge 2024</h1>
+                        <h2>Focus: Housing Affordability</h2>
+                        <p>Lead project aimed at addressing housing affordability challenges in urban areas.</p>
+                    </div>
+                    <div class="projectImg">
+                        <img src="./img/project1.png" alt="Project 1" />
+                    </div>
+                </div>
+                <div class="projectItem">
+                    <div class="projectInfo">
+                        <h1>Mobalytics Externship</h1>
+                        <h2>Contributed to Analytics Solutions</h2>
+                        <p>Worked on developing advanced analytics solutions for user engagement.</p>
+                    </div>
+                    <div class="projectImg">
+                        <img src="./img/project2.png" alt="Project 2" />
+                    </div>
+                </div>
+                <div class="projectItem">
+                    <div class="projectInfo">
+                        <h1>AI Connectivity Platform</h1>
+                        <h2>Enhancing Entrepreneurship</h2>
+                        <p>Developed an AI-driven platform to improve connectivity among entrepreneurship services in Canada.</p>
+                    </div>
+                    <div class="projectImg">
+                        <img src="./img/project3.png" alt="Project 3" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- End Projects Section -->
 
-    <!-- Contact Me Section -->
+    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required><br>
-
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments"></textarea><br>
-
-            <input type="submit" value="Submit">
-        </form>
+        <div class="contact container">
+            <div>
+                <h1 class="sectionTitle">Contact <span>Me</span></h1>
+            </div>
+            <div class="contactItems">
+                <div class="contactItem">
+                    <div class="icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2967/2967892.png" alt="Contact Icon"/>
+                    </div>
+                    <div class="contactInfo">
+                        <form action="#" method="post" class="phpEmailForm">
+                            <p>Name</p>
+                            <input type="text" name="name" placeholder="Your Name" required />
+                            <p>Email</p>
+                            <input type="email" name="email" placeholder="Your Email" required />
+                            <p>Cell No.</p>
+                            <input type="tel" name="phone" placeholder="Your Cell Number" required />
+                            <p>Comments</p>
+                            <textarea style="height: 150px" name="comments" placeholder="Your Message" required></textarea>
+                            <div class="button">
+                                <button class="button" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- End Contact Section -->
 
     <!-- Footer -->
-    <footer>
-        <p>© 2024 Vinosha Srikugananthan | <a href="mailto:vinosha@example.com">vinosha@example.com</a></p>
+    <footer id="footer">
+        <div class="footer container">
+            <div class="logo">
+                <h1><span>Thank You For Visiting My Webpage</span></h1>
+                <p>You can reach me at ↓</p>
+            </div>
+            <h2>vinosha.srikugananthan@ontariotechu.net</h2>
+            <p>Copyright © 2024 Vinosha Srikugananthan. All rights reserved.</p>
+        </div>
     </footer>
+    <!-- End Footer -->
+
+    <script>
+      const navLines = document.querySelector(
+        ".header .navBar .navList .navLines"
+      );
+      const menuItem = document.querySelectorAll(
+        ".header .navBar .navList ul li a"
+      );
+      const head = document.querySelector(".header.container");
+      const mobileMenu = document.querySelector(
+        ".header .navBar .navList ul"
+      );
+
+      navLines.addEventListener("click", () => {
+        navLines.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      });
+
+      document.addEventListener("scroll", () => {
+        var scrollPosition = window.scrollY;
+        if (scrollPosition < 250) {
+          head.style.backgroundColor = "transparent";
+        } else {
+          head.style.backgroundColor = "#29323c";
+        }
+      });
+
+      menuItem.forEach((item) => {
+        item.addEventListener("click", () => {
+          mobileMenu.classList.toggle("active");
+          navLines.classList.toggle("active");
+        });
+      });
+    </script>
 </body>
 </html>
-

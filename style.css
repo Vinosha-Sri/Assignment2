@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,8 +17,8 @@
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
-        <h1>Welcome to Vinosha Srikugananthan's Portfolio</h1>
-        <p>Hi, I'm Vinosha Srikugananthan, a student studying Networking and IT Security at Ontario Tech University.</p>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Vinosha Srikugananthan, a student of Networking and IT Security, passionate about creating impact in the tech community.</p>
     </header>
 
     <!-- Home Section -->
@@ -44,6 +44,7 @@
     <section id="projects">
         <h2>My Projects</h2>
         <ul>
+            <li><strong>Analyst Challenge 2024:</strong> Lead project focused on addressing housing affordability.</li>
             <li><strong>Mobalytics Externship:</strong> Contributed to the development of advanced analytics solutions.</li>
             <li><strong>AI Connectivity Platform:</strong> Developed AI-driven platform enhancing entrepreneurship in Canada.</li>
         </ul>
@@ -75,4 +76,3 @@
     </footer>
 </body>
 </html>
-

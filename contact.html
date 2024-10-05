@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.laptop.css">        <!-- Main styles for laptop/desktop -->
+    <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 1024px)">  <!-- Styles for tablet -->
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">  <!-- Styles for mobile -->
+
+    <title>Contact Me - Vinosha Srikugananthan</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header container">
+        <div class="navBar">
+          <div class="logo">
+              <h1><span>Vinosha Srikugananthan</span></h1>
+          </div>
+          <nav class="navList">
+            <div class="navLines">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li>
+                <a href="index.html" class="navLink"><span>Home</span></a>
+              </li>
+              <li>
+                <a href="about.html" class="navLink"><span>About</span></a>
+              </li>
+              <li>
+                <a href="projects.html" class="navLink"><span>Projects</span></a>
+              </li>
+              <li>
+                <a href="contact.html" class="navLink active"><span>Contact</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form action="your-server-endpoint" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="3" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number.:</label>
+            <input type="tel" id="phone" name="phone" pattern="\d{10}" placeholder="10-digit number" required />
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required minlength="10"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <!-- End Contact Section -->
+
+    <footer id="footer">
+        <div class="footer container">
+            <div class="logo">
+                <h1><span>Thank You For Visiting My Webpage</span></h1>
+                <p>Email:</p>
+            </div>
+            <h2>vinosha.srikugananthan@ontariotechu.net</h2>
+            <p>Copyright © 2024 Vinosha Srikugananthan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

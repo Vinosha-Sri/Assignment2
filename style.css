@@ -1,4 +1,4 @@
-\/* Import the new font */
+/* Import the new font */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
 
 * {
@@ -116,6 +116,127 @@ body {
   background-color: #ff6f91;
 }
 
+/* About Section */
+#about {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #6c63ff;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  text-align: center;
+}
+
+#about p span {
+  color: #ff6f91; /* Highlighted Pink */
+}
+
+/* Projects Section */
+#projects {
+  padding: 60px 0;
+  background-color: #f0f4ff;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #6c63ff;
+}
+
+#projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: #6c63ff;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.project-card a {
+  display: inline-block;
+  background-color: #ff6f91;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #6c63ff;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #6c63ff;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#contact form input[type="submit"] {
+  background-color: #ff6f91;
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact form input[type="submit"]:hover {
+  background-color: #6c63ff;
+}
+
 /* Footer Section */
 #footer {
   background-color: #6c63ff;
@@ -181,5 +302,15 @@ body {
   .navLines.active .bar::before,
   .navLines.active .bar::after {
     top: 0;
+  }
+
+  #about p,
+  #projects .project-card p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  #contact h2 {
+    font-size: 2rem;
   }
 }

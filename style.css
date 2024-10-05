@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0); /* Apply a linear gradient */
   color: #333;
   line-height: 1.6;
 }
@@ -30,7 +30,7 @@ body {
 #header {
   position: fixed;
   width: 100%;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for header */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 100;
 }
@@ -87,7 +87,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg.png) center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg.png) center/cover no-repeat; /* Keep existing gradient */
   color: white;
 }
 
@@ -119,7 +119,7 @@ body {
 /* About Section */
 #about {
   padding: 60px 0;
-  background-color: #fff;
+  background: linear-gradient(135deg, #fff, #f0f0f0); /* Apply gradient */
 }
 
 #about h2 {
@@ -145,7 +145,7 @@ body {
 /* Projects Section */
 #projects {
   padding: 60px 0;
-  background-color: #f0f4ff;
+  background: linear-gradient(135deg, #f0f4ff, #e0e0ff); /* Apply gradient */
 }
 
 #projects h2 {
@@ -199,7 +199,7 @@ body {
 /* Contact Section */
 #contact {
   padding: 60px 0;
-  background-color: #fff;
+  background: linear-gradient(135deg, #fff, #f0f0f0); /* Apply gradient */
 }
 
 #contact h2 {
@@ -239,7 +239,7 @@ body {
 
 /* Footer Section */
 #footer {
-  background-color: #6c63ff;
+  background: linear-gradient(135deg, #6c63ff, #5b52e3); /* Apply gradient */
   color: white;
   padding: 40px 0;
   text-align: center;
@@ -274,7 +274,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100vh;
-    background-color: #6c63ff;
+    background-color: rgba(108, 99, 255, 0.9); /* Slight transparency for mobile menu */
     justify-content: center;
     align-items: center;
     transition: 0.5s ease left;

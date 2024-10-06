@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background: linear-gradient(red, blue); /* Apply a linear gradient */
+  background: linear-gradient(#ffafcc, #a2d2ff); /* Apply a linear gradient */
   color: #333;
   line-height: 1.6;
 }
@@ -87,7 +87,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg.png) center/cover no-repeat; /* Keep existing gradient */
   color: white;
 }
 
@@ -120,7 +119,7 @@ body {
 /* About Section */
 #about {
   padding: 60px 0;
-  background: linear-gradient(135deg, #fff, #f0f0f0); /* Apply gradient */
+  background: linear-gradient(135deg, #cdb4db, #ffc8dd); /* Apply gradient */
 }
 
 #about h2 {
@@ -146,7 +145,7 @@ body {
 /* Projects Section */
 #projects {
   padding: 60px 0;
-  background: linear-gradient(135deg, #f0f4ff, #e0e0ff); /* Apply gradient */
+  background: linear-gradient(135deg, #cdb4db, #ffc8dd); /* Apply gradient */
 }
 
 #projects h2 {
@@ -200,7 +199,7 @@ body {
 /* Contact Section */
 #contact {
   padding: 60px 0;
-  background: linear-gradient(135deg, #fff, #f0f0f0); /* Apply gradient */
+  background: linear-gradient(135deg, #cdb4db, #ffc8dd); /* Apply gradient */
 }
 
 #contact h2 {

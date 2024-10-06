@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, #f9f9f9, #e0e0e0); /* Apply a linear gradient */
+  background: linear-gradient(#ffafcc, #a2d2ff); /* Apply a linear gradient */
   color: #333;
   line-height: 1.6;
 }
@@ -45,7 +45,7 @@ body {
 
 .logo h1 {
   font-size: 1.5rem;
-  color: #ff6f91; /* Soft Pink */
+  color: #ff6f91;
   text-transform: uppercase;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .navList ul a {
-  color: #6c63ff; /* Soft Blue */
+  color: #6c63ff;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -74,7 +74,7 @@ body {
 }
 
 .navList ul a:hover {
-  color: #ff6f91; /* Pink hover */
+  color: #ff6f91; 
 }
 
 .navLines {
@@ -87,12 +87,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg.png) center/cover no-repeat; /* Keep existing gradient */
   color: white;
 }
 
 #home h1 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Adjust font size for tablet */
   text-align: center;
 }
 
@@ -104,7 +103,7 @@ body {
   display: inline-block;
   background-color: #6c63ff;
   color: white;
-  padding: 10px 30px;
+  padding: 10px 25px; /* Slightly reduce padding */
   margin-top: 20px;
   border-radius: 50px;
   text-transform: uppercase;
@@ -119,19 +118,19 @@ body {
 
 /* About Section */
 #about {
-  padding: 60px 0;
-  background: linear-gradient(135deg, #fff, #f0f0f0); /* Apply gradient */
+  padding: 40px 0; /* Adjust padding for tablet */
+  background: linear-gradient(135deg, #cdb4db, #ffc8dd); 
 }
 
 #about h2 {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  font-size: 2rem; /* Adjust font size for tablet */
+  margin-bottom: 30px;
   color: #6c63ff;
 }
 
 #about p {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Adjust font size */
   color: #333;
   max-width: 800px;
   margin: 0 auto;
@@ -145,28 +144,28 @@ body {
 
 /* Projects Section */
 #projects {
-  padding: 60px 0;
-  background: linear-gradient(135deg, #f0f4ff, #e0e0ff); /* Apply gradient */
+  padding: 40px 0; /* Adjust padding for tablet */
+  background: linear-gradient(135deg, #cdb4db, #ffc8dd); /* Apply gradient */
 }
 
 #projects h2 {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  font-size: 2rem; /* Adjust font size */
+  margin-bottom: 30px;
   color: #6c63ff;
 }
 
 #projects .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid layout */
+  gap: 15px; /* Reduce gap for tablet */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .project-card {
   background-color: #fff;
-  padding: 20px;
+  padding: 15px; /* Adjust padding for tablet */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -185,11 +184,11 @@ body {
   display: inline-block;
   background-color: #ff6f91;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 15px; /* Adjust padding for tablet */
   border-radius: 30px;
   text-transform: uppercase;
   font-size: 1rem;
-  margin-top: 15px;
+  margin-top: 10px; /* Reduce margin */
   transition: background-color 0.3s ease;
 }
 
@@ -199,19 +198,19 @@ body {
 
 /* Contact Section */
 #contact {
-  padding: 60px 0;
-  background: linear-gradient(135deg, #fff, #f0f0f0); /* Apply gradient */
+  padding: 40px 0; /* Adjust padding for tablet */
+  background: linear-gradient(45deg, #cdb4db, #A9DEF9); /* Apply gradient */
 }
 
 #contact h2 {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  font-size: 2rem; /* Adjust font size */
+  margin-bottom: 30px;
   color: #6c63ff;
 }
 
 #contact form {
-  max-width: 600px;
+  max-width: 500px; /* Adjust form width */
   margin: 0 auto;
 }
 
@@ -219,7 +218,7 @@ body {
 #contact form textarea {
   width: 100%;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Adjust spacing */
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
@@ -229,7 +228,7 @@ body {
   background-color: #ff6f91;
   color: white;
   border: none;
-  padding: 15px;
+  padding: 10px; /* Adjust padding */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -240,16 +239,16 @@ body {
 
 /* Footer Section */
 #footer {
-  background: linear-gradient(135deg, #6c63ff, #5b52e3); /* Apply gradient */
+  background: linear-gradient(135deg, #6c63ff, #5b52e3); 
   color: white;
-  padding: 40px 0;
+  padding: 30px 0; /* Adjust padding */
   text-align: center;
 }
 
 #footer .logo h1 {
   color: #ff6f91;
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Adjust font size */
 }
 
 #footer p, #footer h2 {
@@ -266,63 +265,52 @@ body {
   color: white;
 }
 
-/* Tablet Responsive Design */
-@media (min-width: 600px) and (max-width: 1024px) {
-
-  #header {
-    height: 70px;
-    padding: 15px 20px;
-  }
-
-  .header {
-    flex-direction: row;
-  }
-
-  .logo h1 {
-    font-size: 2rem;
-  }
-
+/* Responsive Design */
+@media (max-width: 1024px) and (min-width: 768px) {
   .navList ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(108, 99, 255, 0.9); 
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease left;
+  }
+
+  .navList ul.active {
+    left: 0;
+  }
+
+  .navLines {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
 
-  .navList ul a {
-    font-size: 1.2rem;
+  .navLines .bar {
+    height: 3px;
+    width: 30px;
+    background-color: #6c63ff;
+    position: relative;
+    transition: 0.3s ease;
   }
 
-  #home h1 {
-    font-size: 2.5rem;
-  }
-
-  .btn {
-    font-size: 1.1rem;
-    padding: 12px 40px;
-  }
-
-  #about h2,
-  #projects h2,
-  #contact h2 {
-    font-size: 2rem;
+  .navLines.active .bar::before,
+  .navLines.active .bar::after {
+    top: 0;
   }
 
   #about p,
-  #projects .project-card p,
-  #contact form input,
-  #contact form textarea {
-    font-size: 1.1rem;
+  #projects .project-card p {
+    font-size: 1rem;
+    text-align: left;
   }
 
-  #projects .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  #contact h2 {
+    font-size: 1.8rem; 
   }
-
-  #footer {
-    padding: 30px 0;
-  }
-
-  #footer .logo h1 {
-    font-size: 1.8rem;
-  }
-
 }

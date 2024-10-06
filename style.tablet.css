@@ -139,8 +139,13 @@ body {
 }
 
 #about p span {
-  color: #ff6f91; /* Highlighted Pink */
+  color: #ff6f91; 
 }
+
+.aboutImg .profileImage {
+    width: 100%; /* Adjust the width as per your design */
+    max-width: 300px; /* Max width */
+  }
 
 /* Projects Section */
 #projects {

@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <!-- Sets the viewport to make the website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to the main CSS file for laptop/desktop styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Links to the CSS file for tablet styles (applied when the width is 1024px or less) -->
+    <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 1024px)">
+    <!-- Links to the CSS file for mobile styles (applied when the width is 768px or less) -->
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    
+    <!-- Page title shown on the browser tab -->
     <title>Projects - Vinosha Srikugananthan</title>
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header section starts here -->
     <header id="header">
-      <div class="header container">
-        <div class="navBar">
-          <div class="logo">
-              <h1><span>Vinosha Srikugananthan</h1>
-          </div>
-          <nav class="navList">
-            <div class="navLines">
-              <div class="bar"></div>
+        <div class="header container">
+            <!-- Navigation bar starts here -->
+            <div class="navBar">
+                <!-- Logo with the website name as my name -->
+                <div class="logo">
+                    <h1><span>Vinosha Srikugananthan</span></h1>
+                </div>
+                <!-- Navigation menu for different pages of the site -->
+                <nav class="navList">
+                    <div class="navLines">
+                        <div class="bar"></div> <!-- Hamburger icon for mobile menu -->
+                    </div>
+                    <ul>
+                        <!-- Navigation links for Home, About, Projects (current active page), and Contact -->
+                        <li>
+                            <a href="index.html" class="navLink"><span>Home</span></a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="navLink"><span>About</span></a>
+                        </li>
+                        <li>
+                            <a href="projects.html" class="navLink active"><span>Projects</span></a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="navLink"><span>Contact</span></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <ul>
-              <li>
-                <a href="index.html" class="navLink"><span>Home</span></a>
-              </li>
-              <li>
-                <a href="about.html" class="navLink"><span>About</span></a>
-              </li>
-              <li>
-                <a href="projects.html" class="navLink active"><span>Projects</span></a>
-              </li>
-              <li>
-                <a href="contact.html" class="navLink"><span>Contact</span></a>
-              </li>
-            </ul>
-          </nav>
         </div>
-      </div>
     </header>
-    <!-- End Header -->
+    <!-- End of header section -->
 
     <!-- Projects Section -->
     <section id="projects">
         <div class="projects container">
+            <!-- Section header for projects -->
             <div class="projectsHeader">
                 <h1 class="sectionTitle">Recent <span>Projects</span></h1>
             </div>
+            <!-- Project items list -->
             <div class="allProjects">
+                <!-- Individual project item 1: Information Systems Class -->
                 <div class="projectItem">
                     <div class="projectInfo">
                         <h1>Information Systems Class</h1>
@@ -53,6 +69,7 @@
                         <p>Engaging in the ERP Simulation Game was a pivotal moment in my academic journey, offering an immersive and hands-on exploration of Enterprise Resource Planning (ERP) systems. Teaming up with fellow students, I embarked on a dynamic learning experience, navigating the complexities of real-life business operations using SAP software. </p>
                     </div>
                 </div>
+                <!-- Individual project item 2: Mobalytics Externship -->
                 <div class="projectItem">
                     <div class="projectInfo">
                         <h1>Mobalytics Externship</h1>
@@ -60,29 +77,32 @@
                         <p> Conducted comprehensive secondary research, outlining the features for a support platform. Delivered in-depth market and ecosystem research by identifying over 20 existing solutions and resources for entrepreneurs, organized by stage and geographical location, and presented findings in a clear, concise report. Developed a business model, including a detailed assessment of developmental and operational costs, and created a professional-level business plan that forecasts expenses and potential revenue streams.</p>
                     </div>
                 </div>
+                <!-- Individual project item 3: Brilliant Catalyst Work-Integrated Learning -->
                 <div class="projectItem">
                     <div class="projectInfo">
                         <h1>Brilliant Catalyst Work-Integrated Learning</h1>
-                        <h2>Entrepreneurship AI Developement Platform</h2>
+                        <h2>Entrepreneurship AI Development Platform</h2>
                         <p> Contributed to the comprehensive business model research of an AI-driven platform to improve connectivity among entrepreneurship services in Canada.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Projects Section -->
+    <!-- End of projects section -->
 
+    <!-- Footer section starts here -->
     <footer id="footer">
         <div class="footer container">
+            <!-- Footer logo and thank you message -->
             <div class="logo">
                 <h1><span>Thank You For Visiting My Webpage</span></h1>
                 <p>Email:</p>
             </div>
+            <!-- Email address displayed in the footer -->
             <h2>vinosha.srikugananthan@ontariotechu.net</h2>
+            <!-- Copyright notice -->
             <p>Copyright © 2024 Vinosha Srikugananthan. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

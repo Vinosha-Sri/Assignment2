@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <!-- Ensures the page is responsive by setting the viewport for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to the main stylesheet for laptop/desktop screens -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to the stylesheet for tablet screens (applies when screen width is max 1024px) -->
+    <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 1024px)">
+    <!-- Link to the stylesheet for mobile screens (applies when screen width is max 768px) -->
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    
+    <!-- Sets the title of the webpage -->
     <title>Vinosha Srikugananthan - Home</title>
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header section containing navigation menu -->
     <header id="header">
       <div class="header container">
+        <!-- Navigation bar container -->
         <div class="navBar">
+          <!-- Logo and title -->
           <div class="logo">
-              <h1><span>Vinosha Srikugananthan</h1>
+              <h1><span>Vinosha Srikugananthan</span></h1> <!-- Highlighting name in a span for styling -->
           </div>
+          
+          <!-- Navigation list with links -->
           <nav class="navList">
+            <!-- Icon to display lines (could be used for a mobile hamburger menu) -->
             <div class="navLines">
               <div class="bar"></div>
             </div>
+            <!-- Unordered list for navigation links -->
             <ul>
+              <!-- Active link pointing to the home page -->
               <li>
                 <a href="index.html" class="navLink active"><span>Home</span></a>
               </li>
+              <!-- Link to the about page -->
               <li>
                 <a href="about.html" class="navLink"><span>About</span></a>
               </li>
+              <!-- Link to the projects page -->
               <li>
                 <a href="projects.html" class="navLink"><span>Projects</span></a>
               </li>
+              <!-- Link to the contact page -->
               <li>
                 <a href="contact.html" class="navLink"><span>Contact</span></a>
               </li>
@@ -40,30 +56,34 @@
         </div>
       </div>
     </header>
-    <!-- End Header -->
+    <!-- End of Header -->
 
-    <!-- Home Section -->
+    <!-- Home section with a greeting message and button -->
     <section id="home">
         <div class="home container">
             <div>
                 <h1>Hello, I'm Vinosha Srikugananthan! <span></span></h1>
+                <!-- Button linking to the projects page -->
                 <a href="projects.html" class="btn">View Projects</a>
             </div>
         </div>
     </section>
-    <!-- End Home Section -->
+    <!-- End of Home Section -->
 
-    <!-- Footer -->
+    <!-- Footer section -->
     <footer id="footer">
         <div class="footer container">
+            <!-- Footer logo and message -->
             <div class="logo">
                 <h1><span>Thank You For Visiting My Webpage</span></h1>
                 <p>Email:</p>
             </div>
+            <!-- Email contact info -->
             <h2>vinosha.srikugananthan@ontariotechu.net</h2>
+            <!-- Copyright information -->
             <p>Copyright © 2024 Vinosha Srikugananthan. All rights reserved.</p>
         </div>
     </footer>
-    <!-- End Footer -->
+    <!-- End of Footer -->
 </body> 
 </html>

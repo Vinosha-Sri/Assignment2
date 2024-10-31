@@ -2,37 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures the webpage is responsive to different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">        <!-- Main styles for laptop/desktop -->
-    <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 1024px)">  <!-- Styles for tablet -->
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">  <!-- Styles for mobile -->
+    
+    <!-- Link to the main CSS file for laptop/desktop styling -->
+    <link rel="stylesheet" href="style.css">        
+    <!-- Link to the CSS file for tablet styling, applied when the screen width is 1024px or less -->
+    <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 1024px)">  
+    <!-- Link to the CSS file for mobile styling, applied when the screen width is 768px or less -->
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">  
 
+    <!-- Sets the title for the webpage -->
     <title>Contact Me - Vinosha Srikugananthan</title>
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header Section -->
     <header id="header">
       <div class="header container">
         <div class="navBar">
+          <!-- Logo of the webpage, displaying the name -->
           <div class="logo">
               <h1><span>Vinosha Srikugananthan</span></h1>
           </div>
+          <!-- Navigation Bar -->
           <nav class="navList">
             <div class="navLines">
               <div class="bar"></div>
             </div>
+            <!-- List of navigation links -->
             <ul>
               <li>
+                <!-- Link to the Home page -->
                 <a href="index.html" class="navLink"><span>Home</span></a>
               </li>
               <li>
+                <!-- Link to the About page -->
                 <a href="about.html" class="navLink"><span>About</span></a>
               </li>
               <li>
+                <!-- Link to the Projects page -->
                 <a href="projects.html" class="navLink"><span>Projects</span></a>
               </li>
               <li>
+                <!-- Link to the Contact page, marked as active since this is the current page -->
                 <a href="contact.html" class="navLink active"><span>Contact</span></a>
               </li>
             </ul>
@@ -40,38 +53,48 @@
         </div>
       </div>
     </header>
-    <!-- End Header -->
+    <!-- End of Header Section -->
 
-    <!-- Contact Section -->
+    <!-- Contact Section where users can submit their contact information -->
     <section id="contact">
         <h1>Contact Me</h1>
+        <!-- Contact form that sends data to the specified server endpoint using POST method -->
         <form action="your-server-endpoint" method="POST">
+            <!-- Field for the user's name with validation for required and minimum length -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required minlength="3" />
 
+            <!-- Field for the user's email with required validation and proper format enforcement -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
 
+            <!-- Field for the user's phone number, requires a 10-digit input -->
             <label for="phone">Phone Number.:</label>
             <input type="tel" id="phone" name="phone" pattern="\d{10}" placeholder="10-digit number" required />
 
+            <!-- Text area for comments, with validation for minimum text length -->
             <label for="comments">Comments:</label>
             <textarea id="comments" name="comments" rows="4" required minlength="10"></textarea>
 
+            <!-- Submit button for the form -->
             <button type="submit">Submit</button>
         </form>
     </section>
-    <!-- End Contact Section -->
+    <!-- End of Contact Section -->
 
+    <!-- Footer Section -->
     <footer id="footer">
         <div class="footer container">
             <div class="logo">
                 <h1><span>Thank You For Visiting My Webpage</span></h1>
                 <p>Email:</p>
             </div>
+            <!-- Displays email contact information -->
             <h2>vinosha.srikugananthan@ontariotechu.net</h2>
+            <!-- Copyright information -->
             <p>Copyright © 2024 Vinosha Srikugananthan. All rights reserved.</p>
         </div>
     </footer>
+    <!-- End of Footer Section -->
 </body>
 </html>

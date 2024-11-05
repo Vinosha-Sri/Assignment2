@@ -19,19 +19,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Home' }); // Home page will use the default content in index.ejs
+  res.render('index', { title: 'Home' });
 });
 
 app.get('/about', (req, res) => {
-  res.render('index', { title: 'About', body: '<%- include("about") %>' });
+  res.render('about', { title: 'About' });
 });
 
 app.get('/projects', (req, res) => {
-  res.render('index', { title: 'Projects', body: '<%- include("projects") %>' });
+  res.render('projects', { title: 'Projects' });
 });
 
 app.get('/contact', (req, res) => {
-  res.render('index', { title: 'Contact', body: '<%- include("contact") %>' });
+  res.render('contact', { title: 'Contact' });
 });
 
 // Catch 404 and forward to error handler
@@ -48,4 +48,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-

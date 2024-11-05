@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.tablet.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="/stylesheets/style.mobile.css" media="(max-width: 768px)">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <%- body %>
+    </main>
+
+    <footer>
+        <p>Thank You For Visiting My Webpage</p>
+        <p>Email: vinosha.srikugananthan@ontariotechu.net</p>
+        <a href="https://github.com/Vinosha-Sri">GitHub</a>
+        <a href="https://linkedin.com/in/Vinosha-Sri">LinkedIn</a>
+    </footer>
+</body>
+</html>

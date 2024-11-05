@@ -1,60 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Link to external CSS files for styling -->
-    <link rel="stylesheet" href="style.css">        <!-- Main styles for laptop/desktop -->
-    <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 1024px)">  <!-- Styles for tablet screens -->
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">  <!-- Styles for mobile screens -->
-
-    <!-- Title displayed on the browser tab -->
-    <title>About - Vinosha Srikugananthan</title>
-</head>
-
-<body>
-    <!-- Header section -->
-    <header id="header">
-      <div class="header container">
-        <div class="navBar">
-          <!-- Website logo with my name -->
-          <div class="logo">
-              <h1><span>Vinosha Srikugananthan</h1>
-          </div>
-          <!-- Navigation menu with links to other pages -->
-          <nav class="navList">
-            <!-- Menu icon/bar for mobile view -->
-            <div class="navLines">
-              <div class="bar"></div>
-            </div>
-            <!-- Navigation links -->
-            <ul>
-              <li>
-                <a href="index.html" class="navLink"><span>Home</span></a>  <!-- Home link -->
-              </li>
-              <li>
-                <a href="about.html" class="navLink active"><span>About</span></a>  <!-- Current page: About -->
-              </li>
-              <li>
-                <a href="projects.html" class="navLink"><span>Projects</span></a>  <!-- Projects link -->
-              </li>
-              <li>
-                <a href="contact.html" class="navLink"><span>Contact</span></a>  <!-- Contact link -->
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- About Section -->
+<% layout('layout') %>
 <section id="about">
   <div class="about container">
       <div class="colLeft">
           <div class="aboutImg">
-              <img src="images/profile.jpeg" alt="Vinosha Srikugananthan" class="profileImage"> 
+              <img src="/images/profile.jpeg" alt="Vinosha Srikugananthan" class="profileImage"> 
           </div>
       </div>
       <!-- Right column for content -->
@@ -66,28 +15,10 @@
               <p>Hello! My name is Vinosha Srikugananthan, and I am passionate about technology, security, and making an impact in the tech community. As a third-year university student at Ontario Tech University, I am currently specializing in Networking and IT Security while pursuing a minor in Business Management. My involvement in various leadership roles, such as the Vice President of Information Technology at the Business and Information Technology Society (BITSoc), and Vice President of the Technology Management Student Association (TMSA), has helped me develop strong problem-solving, communication, and teamwork skills. I am eager to continue learning and growing in the field, while also giving back to the student community.</p>
           </article>
           <h3>Watch My Introductory Video</h3>
-                <video width="640" height="360" controls>
-                    <source src="videos/intro.mp4" type="video/mp4"> 
-                    Your browser does not support the video tag.
-                </video>
+          <video width="640" height="360" controls>
+              <source src="/videos/intro.mp4" type="video/mp4"> 
+              Your browser does not support the video tag.
+          </video>
       </div>
   </div>
 </section>
-
-    <!-- End About Section -->
-
-    <!-- Footer Section -->
-    <footer id="footer">
-        <div class="footer container">
-            <!-- Thank you message and contact information -->
-            <div class="logo">
-                <h1><span>Thank You For Visiting My Webpage</span></h1>
-                <p>Email:</p>
-            </div>
-            <h2>vinosha.srikugananthan@ontariotechu.net</h2> <!-- Email address -->
-            <!-- Copyright notice -->
-            <p>Copyright © 2024 Vinosha Srikugananthan. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>

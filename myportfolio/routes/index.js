@@ -1,24 +1,30 @@
 var express = require('express');
 var router = express.Router();
 
-// Home route
+/* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('index');
-});
-
-// About route
-router.get('/about', function(req, res, next) {
-    res.render('about');
-});
-
-// Projects route
-router.get('/projects', function(req, res, next) {
-    res.render('projects');
-});
-
-// Contact route
-router.get('/contact', function(req, res, next) {
-    res.render('contact');
+  res.render('index', { title: 'Home' });
 });
 
 module.exports = router;
+
+
+/* GET home page. */
+router.get('/home', function(req, res, next) {
+  res.render('partials/Home',{ title: 'Home' });
+});
+
+/* GET about page. */
+router.get('/about', function(req, res, next) {
+  res.render('partials/About', { title: 'About Me' });
+});
+
+/* GET projects page. */
+router.get('/projects', function(req, res, next) {
+  res.render('partials/Project', { title: 'Projects' });
+});
+
+/* GET contact page. */
+router.get('/contact', function(req, res, next) {
+  res.render('partials/Contact', { title: 'Contact Me' });
+});

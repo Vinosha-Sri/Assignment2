@@ -23,11 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Define routes
 
-app.get('/test', (req, res) => {
-  res.render('index', { title: 'Test Page' });
-});
-
-
 app.get('/', (req, res) => {
   console.log('Rendering Home page with title');
   res.render('index', { title: 'Home' });

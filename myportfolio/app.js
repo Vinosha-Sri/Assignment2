@@ -1,9 +1,3 @@
-const express = require('express');
-const app = express();
-app.set('view engine', 'ejs');
-app.use(express.static('public')); // Serve static assets like CSS and images
-
-
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -45,23 +39,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-
-// Home route
-app.get('/', (req, res) => {
-  res.render('index'); 
-});
-
-// About route
-app.get('/about', (req, res) => {
-  res.render('about'); 
-});
-
-// Projects route
-app.get('/projects', (req, res) => {
-  res.render('projects'); 
-});
-
-// Contact route
-app.get('/contact', (req, res) => {
-  res.render('contact'); 
-});

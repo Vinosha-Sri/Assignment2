@@ -6,24 +6,19 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
 
-module.exports = router;
-
-/* GET home page. */
-router.get('/home', function(req, res, next) {
-  res.render('partials/Home',{ title: 'Home' });
-});
-
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-  res.render('partials/About', { title: 'About Me' });
+  res.render('about', { title: 'About Me' });
 });
 
 /* GET projects page. */
 router.get('/projects', function(req, res, next) {
-  res.render('partials/Project', { title: 'Projects' });
+  res.render('projects', { title: 'Projects' });
 });
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('partials/Contact', { title: 'Contact Me' });
+  res.render('contact', { title: 'Contact Me' });
 });
+
+module.exports = router;

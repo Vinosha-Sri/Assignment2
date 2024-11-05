@@ -14,14 +14,31 @@
 </head>
 
 <body>
-  <!-- About Section -->
-  <%- include('partials/about') %>
-  
-  <!-- Projects Section -->
-  <%- include('partials/project') %>
-  
-  <!-- Contact Section -->
-  <%- include('partials/contact') %>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <% if (typeof body !== 'undefined') { %>
+      <!-- Rendered page content for other pages like about, projects, etc. -->
+      <%- body %>
+    <% } else { %>
+      <!-- Home page content -->
+      <section id="home">
+        <div class="home container">
+          <h1>Welcome to My Portfolio</h1>
+          <p>This is the homepage content.</p>
+        </div>
+      </section>
+    <% } %>
+  </main>
 
   <!-- Footer -->
   <footer>

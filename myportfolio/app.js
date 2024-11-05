@@ -3,8 +3,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var expressLayouts = require('express-ejs-layouts'); // Add this line
 
 var app = express();
+
+// Set up express-ejs-layouts
+app.use(expressLayouts); // Add this line
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -16,36 +20,34 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Define routes directly in app.js
+// Define routes
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Home' });
+    res.render('index', { title: 'Home' });
 });
 
 app.get('/about', (req, res) => {
-  res.render('about', { title: 'About' });
+    res.render('about', { title: 'About' });
 });
 
 app.get('/projects', (req, res) => {
-  res.render('projects', { title: 'Projects' });
+    res.render('projects', { title: 'Projects' });
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact', { title: 'Contact' });
+    res.render('contact', { title: 'Contact' });
 });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+    next(createError(404));
 });
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  res.status(err.status || 500);
-  res.render('error');
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
+    res.status(err.status || 500);
+    res.render('error');
 });
 
 module.exports = app;

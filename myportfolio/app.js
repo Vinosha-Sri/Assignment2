@@ -20,27 +20,22 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Define routes
 app.get('/', (req, res) => {
-    res.render('index', { title: 'Home' });
+  res.render('index', { title: 'Home' });
 });
 
 app.get('/about', (req, res) => {
-    res.render('about', { title: 'About' });
+  res.render('about', { title: 'About' });
 });
 
 app.get('/projects', (req, res) => {
-    res.render('projects', { title: 'Projects' });
+  res.render('projects', { title: 'Projects' });
 });
 
 app.get('/contact', (req, res) => {
-    res.render('contact', { title: 'Contact' });
+  res.render('contact', { title: 'Contact' });
 });
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-    next(createError(404));
-});
 
 // error handler
 app.use(function(err, req, res, next) {

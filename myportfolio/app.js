@@ -44,13 +44,10 @@ app.use(function(err, req, res, next) {
   res.render('error', { title: "Error" });
 });
 
+// Export the app module
 module.exports = app;
 
-
-const express = require('express');
-const app = express();
-
-// Listen on the specified port from the environment variable
+// Start the server and listen on the specified port from the environment variable
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

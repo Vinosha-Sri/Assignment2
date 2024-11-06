@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Error - <%= error.status %></title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
-<body>
-  <div class="error-container">
-    <h1>Error <%= error.status %>: <%= message %></h1>
-    <p>We're sorry, but something went wrong.</p>
-    
-    <% if (app.get('env') === 'development') { %>
-      <pre><%= error.stack %></pre>
-    <% } else { %>
-      <p>Please try again later or contact support if the issue persists.</p>
-    <% } %>
-  </div>
-</body>
-</html>
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+<div class = "container">
+    <h1><%= message %></h1>
+    <h2><%= error.status %></h2>
+    <pre><%= error.stack %></pre>
+</div>
+
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>

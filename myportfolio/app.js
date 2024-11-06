@@ -45,3 +45,13 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
+const express = require('express');
+const app = express();
+
+// Listen on the specified port from the environment variable
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});

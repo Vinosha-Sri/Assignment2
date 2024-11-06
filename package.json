@@ -1,5 +1,19 @@
 {
+  "name": "Assignment2",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
+    "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.1"
-  }
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "keywords": [],
+  "author": "Vinosha",
+  "license": "ISC"
 }

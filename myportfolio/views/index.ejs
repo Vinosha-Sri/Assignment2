@@ -14,34 +14,27 @@
 </head>
 
 <body>
-  <!--Home-->
-  <% include partials/index.ejs %>
-  <!--About-->
-  <% include partials/about.ejs %>
-  <!--Projects-->
-  <% include partials/project.ejs %>
-  <!--Contact-->
-  <% include partials/contact.ejs %>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Main Content -->
+  <!-- Home Page Content -->
   <main>
-    <% if (typeof body !== 'undefined') { %>
-      <!-- Rendered page content for other pages like about, projects, etc. -->
-      <%- body %>
-    <% } else { %>
-      <!-- Home page content -->
-      <section id="home">
-        <div class="home container">
-          <h1>Welcome to My Portfolio</h1>
-        </div>
-      </section>
-    <% } %>
+    <section id="home">
+      <div class="home container">
+        <h1>Welcome to Vinosha Srikugananthan's Portfolio</h1>
+        <p>Home Page.</p>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <div class="footer-container"></div>
-    <p class="copyright">© Copyright <b>Vinosha</b>. All Rights Reserved.</p>
+    <p>© Copyright <b>Vinosha Srikuganthan</b>. All Rights Reserved To Vinosha.</p>
   </footer>
 
   <!-- Script Files -->

@@ -1,22 +1,15 @@
-<% layout('layout') %>
 <section id="contact">
     <div class="contact container">
         <h1>Contact Me</h1>
-        <!-- Contact form that sends data to the specified server endpoint using POST method -->
+        <!-- Uses the POST method to create a Contact form that sends data to the server -->
         <form action="your-server-endpoint" method="POST">
-            <!-- Field for the user's name with validation for required and minimum length -->
+            <!-- Field validation for contact form -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required minlength="3" />
-
-            <!-- Field for the user's email with required validation and proper format enforcement -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
-
-            <!-- Field for the user's phone number, requires a 10-digit input -->
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" pattern="\d{10}" placeholder="10-digit number" required />
-
-            <!-- Text area for comments, with validation for minimum text length -->
             <label for="comments">Comments:</label>
             <textarea id="comments" name="comments" rows="4" required minlength="10"></textarea>
 

@@ -1,11 +1,17 @@
-<%- include partials/header.ejs %>
-<%- include partials/main_nav.ejs %>
-
-<div class = "container">
-    <h1><%= message %></h1>
-    <h2><%= error.status %></h2>
-    <pre><%= error.stack %></pre>
-</div>
-
-<%- include partials/bottom_nav.ejs %>
-<%- include partials/footer.ejs %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scaling on mobile devices -->
+    <title><%= title %></title> 
+    <link rel="stylesheet" href="/stylesheets/style.css"> <!-- Links to the external stylesheet for page styling -->
+</head>
+<body>
+    <!-- Main container for error information -->
+    <div class="container">
+        <h1><%= message %></h1> <!-- Displays the main error message dynamically -->
+        <h2>Status: <%= error.status %></h2> <!-- Shows the error status code -->
+        <pre><%= error.stack %></pre> <!-- Displays the stack trace for debugging purposes -->
+    </div>
+</body>
+</html>
